@@ -118,6 +118,7 @@ p {
 
 .btn:hover {
     background-color: transparent;
+    color: var(--very-light);
 }
 
 @media only screen and (max-width: 1860px){
