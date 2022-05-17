@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+--bright-orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+--gray:  hsla(0, 0%, 100%, 0.75);
+--very-light: hsl(0, 0%, 95%);
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 15px;
+    background-color: var(--very-light);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    max-width: 75%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.box .col1 {
+    background-color: var(--bright-orange);
+    width: 25%;
+}
+
+.box .col2 {
+    background-color: var(--dark-cyan);
+    width: 25%;
+}
+
+.box .col3 {
+    background-color: var(--very-dark-cyan);
+    width: 25%;
+}
+
+.col1 .content {
+    margin: 40px 60px;
+    line-height: 30px;
+    width: 70%;
+}
+
+.col2 .content {
+    margin: 40px 60px;
+    line-height: 30px;
+    width: 65%;
+}
+
+.col3 .content {
+    margin: 40px 60px;
+    line-height: 30px;
+    width: 70%;
+}
+
+.content h1{
+    margin-top: 10px;
+    color: var(--very-light);
+}
+
+.content p {
+    margin-top: 30px;
+    color: var(--gray);
+}
+
+.col1 .btn {
+    margin-top: 90px;
+    color: var(--bright-orange);
+}
+
+.col2 .btn {
+    margin-top: 60px;
+    color: var(--dark-cyan);
+}
+
+.col3 .btn {
+    margin-top: 90px;
+    color: var(--very-dark-cyan);
+}
+
+.btn {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 500;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid 2px;
+    border-color: var(--very-light);
+}
+
+.btn:hover {
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 1860px){
+    .content .btn {
+        margin-top: 20px
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    body {
+        height: 100vh;
+    }
+    .box {
+        flex-direction: column;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        overflow: visible;
+        align-items: center;
+    }
+    .box .col1 {
+        margin-top: 500px;
+        width: 50%;
+        height: 100%;
+    }
+
+    .col1 .content{
+        width: 65%;
+    }
+    .box .col2 {
+        width: 50%;
+        height: 100%;
+    }
+    .col2 .content{
+        width: 65%;
+    }
+    .box .col3 {
+        width: 50%;
+        height: 100%;
+    }
+    .col3 .content{
+        width: 65%;
+    }
+}
